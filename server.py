@@ -104,7 +104,6 @@ def get_event_details(id):
 
     event_name = data["name"]
     # print(event_name)
-    # event_details = data["info"]
 
     event_image_url = data["images"][0]["url"]
     # print(event_image_url)
@@ -134,7 +133,6 @@ def get_event_details(id):
 
     return render_template('event-details.html',
                             event_name = event_name,
-                            # event_details = event_details,
                             event_image_url = event_image_url,
                             event_tickmaster_url = event_tickmaster_url,
                             event_start_date = event_start_date,
